@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chinese Zodiac Animal Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* ------------ body style ------------ */
+      body {
+        background-color: #e2dfdf;
+      }
+      /* ------------ heading style ------------ */
+      h1 {
+        text-align: center;
+        color: #231f20;
+        font-family: "Rampart One", cursive;
+        font-size: 70px;
+        font-weight: 400;
+        margin-bottom: 0px;
+      }
+      h2 {
+        text-align: center;
+        color: #231f20;
+        font-family: "Rubik", sans-serif;
+        font-size: 40px;
+      }
+      /* ----------- main body style ------------ */
+      .main, .second {
+        text-align: center;
+        color: #231f20;
+        font-size: 18px;
+        font-family: "Rubik", sans-serif;
+        max-width: 900px;
+        width: 85%;
+        margin: 0 auto;
+        padding: 0;
+        line-height: 1.5;
+      }
+      /* ------------ link style------------ */
+      .astrology {
+        display: block;
+        font-family: "Rubik", sans-serif;
+        font-size: 25px;
+        text-align: center;
+        margin: 0 auto;
+        color: #ba065d;
+      }
+      .astrology:hover {
+        text-decoration: none;
+      }
+      /* ----------- image style ------------ */
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 800px;
+        max-width: 80%;
+        border-radius: 4px;
+      }
+      /* ----------- button style ------------ */
+      button {
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #231f20;
+        border-color: #231f20;
+        color: #e2dfdf;
+        font-family: "Rubik", sans-serif;
+        font-size: 18px;
+        transition: all 100ms ease-in-out;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+      }
+      button:hover {
+        background-color: #FFA6A2;
+        color: #ba065d;
+        font-weight: bold;
+        cursor: pointer;
+        border-color: #ba065d;
+      }
+      /* ----------- footer style ------------ */
+      footer {
+        font-family: monospace;
+        text-align: center;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Chinese Astrology 101</h1>
+    <h2>What is the Chinese Zodiac?</h2>
+    <section class="main">
+      <p>
+        Chinese astrology has 12 zodiac signs - represented by animals.
+        <br />Your sign is determined by what year you were born. <br />Chinese
+        astrology has a rich history of more than 2,000 years. <br />
+        The zodiac animals are believed to influence personality, career,
+        compatability, relationships and wealth.
+      </p>
+      <hr />
+      <p>
+        There is an amusing legend about the origin of Chinese zodiac. The Jade
+        Emperor wanted to select 12 animals to be his palace guards. He wanted
+        the Ox 🐂 to be the first for its honesty and diligence, but
+        surprisingly, the smart Rat 🐀 covertly hid on the Ox's back and
+        occupied the first place at the essential moment.
+      </p>
+      <p>
+        The Tiger 🐅 was crowned next as the King of the Forest and then the
+        Dragon 🐉 as the Lord of the Sea. However, the Rabbit 🐇 won a race
+        against the Dragon and gained the No. 4 spot. The Snake 🐍, Horse 🐎,
+        Sheep 🐑, Monkey 🐒, and Rooster 🐓 all followed. The Dog 🐕 was
+        punished to be the last one for biting the Rabbit; but ultimately the
+        Dog became the 11th. The 12th sign was the one animal tardy to the
+        party, the Pig 🐖, who finally took the last place.
+      </p>
+    </section>
+    <br /><br />
+    <img
+      src="/zodiacimage.jpg"
+    /><br /><br />
+    <button>Which Zodiac Animal Are You?</button>
+    <br />
+<section class="second">
+          <h2>2022 Year of The Tiger</h2>
+          <p>People born in the year of the the Tiger are brave, passionate, competitive, and charming! They can also be unpredictable, irritable, and overindulgent.
+        Those born under this sign can make strong leaders as they are confident and can handle anything that comes along. Not one to prepare or plan, they are quick at reacting on the spot.
+         Tigers are also known for being the center of attention and well-liked by their peers.</p>
+         <p>Famously Born in the Year of the Tiger: Lady Gaga, Leonardo DiCaprio, Tom Cruise and Queen Elizabeth II.</p>
+         
+        <a href="https://www.travelchinaguide.com/intro/chinese-zodiac-years-chart.htm" class="astrology" target="_blank">Learn More About The Chinese Zodiac!</a> <br>
+    <br>
+    <footer>
+      This page was built by Shelby Courtney (who is a Horse in the Chinese
+      Zodiac 🐎).
+    </footer>
+    <br><br><br>
+
+
+<script>
+
+  let rat = ["1948", "1960", "1972", "1984", "1996", "2008", "2020"];
+  let ox = ["1949", "1961", "1973", "1985", "1997", "2009", "2021"];
+  let tiger = ["1950", "1962", "1974", "1986", "1998", "2010", "2022"];
+  let rabbit = ["1951", "1963", "1975", "1987", "1999", "2011"];
+  let dragon = ["1952", "1964", "1976", "1988", "2000", "2012"];
+  let snake = ["1953", "1965", "1977", "1989", "2001", "2013"];
+  let horse = ["1954", "1966", "1978", "1990", "2002", "2014"];
+  let sheep = ["1955", "1967", "1979", "1991", "2003", "2015"];
+  let monkey = ["1956", "1968", "1980", "1992", "2004", "2016"];
+  let rooster = ["1945", "1957", "1969", "1981", "1993", "2005", "2017"];
+  let dog = ["1946", "1958", "1970", "1982", "1994", "2006", "2018"];
+  let pig = ["1947", "1959", "1971", "1983", "1995", "2007",];
+
+
+function zodiac() {
+  let date = prompt("What year were you born?");
+  if (rat.includes(date) === true) {
+    alert("You are a Rat! 🐀");
+  } else {
+    if (ox.includes(date) === true) {
+      alert("You are an Ox! 🐂");
+    } else {
+      if (tiger.includes(date) === true) {
+        alert("You are a Tiger! 🐅");
+      } else {
+        if (rabbit.includes(date) === true) {
+          alert("You are a Rabbit! 🐇");
+        } else {
+          if (dragon.includes(date) === true) {
+            alert("You are a Dragon! 🐉");
+          } else {
+            if (snake.includes(date) === true)
+ {
+   alert("You are a Snake! 🐍");
+ } else {
+   if (horse.includes(date) === true) {
+     alert("You are a Horse! 🐎");
+   } else {
+     if (sheep.includes(date) === true) {
+       alert("You are a Sheep! 🐑");
+     } else {
+       if (monkey.includes(date) === true) {
+         alert("You are a Monkey! 🐒");
+       } else {
+         if (rooster.includes(date) === true) {
+           alert("You are a Rooster! 🐓");
+         } else {
+           if (dog.includes(date) === true) {
+             alert("You are a Dog! 🐕");
+           } else {
+             if (pig.includes(date) === true) {
+               alert("You are a Pig! 🐖");
+             } else {
+               alert("Sorry, we couldn't find that year! 😕");
+             }
+           }
+         }
+       }
+     }
+   }
+ }          }
+        }
+      }
+    }
+  }
+}
+let button = document.querySelector("button");
+button.addEventListener("click", zodiac);
+</script>
+
+
+
+
+    <!-- <script>
+      function zodiac() {
+        let name = prompt("What is your name?");
+        let date = prompt("What year were you born?");
+        let contact = prompt("What is your email address?");
+        let ask = prompt("Can we send a free Chinese Horoscope reading straight to your inbox?");
+        ask = ask.toLowerCase().trim();
+if (ask === "yes") {
+    alert(
+          "Thanks, " + name + "! Check your inbox for a detailed reading! ✨"
+        ); 
+} else {
+    
+        alert("No problem! Come back when you're ready! 👍")
+    
+}
+}
+      
+      let button = document.querySelector("button");
+      button.addEventListener("click", zodiac);
+    </script> -->
+  </body>
+</html>
+
+
+
+
+
+
+ 
